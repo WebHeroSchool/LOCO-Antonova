@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <title>Loco - главная страница</title>
+    </head>
+    <body>
+
+        <header class="header">
+            <a class="header__logo  header__logo_link" href="#">
+                <img class="header__logo" src="img/logo.jpg" width="98px" height="37px" alt="Логотип LOCO">
+            </a>
+            <a class="header__lang-switcher" href="#" title="Выбрать язык">RU</a>
+            <div class="header__menu"></div>
+        </header>
+
+        <main class="main">
+
+            <section class="collection">
+                <a class="collection__link" href="#">
+                    <img class="collection__img" src="img/new-collection.jpg" alt="Обложка для новой коллекции">
+                </a>
+                <div class="collection__wrap">
+                    <h1 class="collection__title">Новая коллекция</h1>
+                    <p class="collection__description  desription">Бесплатная доставка включена. Предложение действует на сайте <a class="collection__link" href="#" title="Перейти на наш сайт">loco.com</a> и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+                    <a class="collection__link  button" href="#" title="Читать дальше">Читать дальше</a>
+                    <a class="collection__link  another-items" href="#" title="Посмотреть другие предложения">Другие предложения</a>
+                </div>
+
+                <div class="collection__social">
+                    <ul class="collection__social-list  social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__link-instagram" src="img/ig.jpg" width="43" height="43" alt="Мы в Instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__link-vkontakte" src="img/vk.jpg" width="43" height="43" alt="Мы ВКонтакте">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__link-facebook" src="img/fb.jpg" width="43" height="43" alt="Мы в Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="popular-item">
+                <a class="popular-item__link" href="#" title="Перейти на страницу товара">
+                    <img class="popular-item__img  popular-item__img_small" src="img/white-bag.jpg" alt="Кожаный клатч белый">
+                    <img class="popular-item__img  popular-item__img_big" src="img/pink-bag.jpg" alt="Кожаный клатч розовый">
+                </a>
+                <div class="popular-item__wrap">
+                    <h2 class="popular-item__title  title">Кожаный клатч</h2>
+                    <h3 class="popular-item__subtitle  subtitle">Осенняя коллекция</h3>
+                    <p class="popular-item__desription  desription">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+                    <form class="popular-item__form  form" action="/" method="post">
+                        <fieldset class="form__colors">
+                            <label class="form__colors-item">
+                                <input class="form__colors-btn" alt="Выбрать серый цвет" type="radio" tabindex="1">
+                            </label>
+                            <label class="form__colors-item">
+                                <input class="form__colors-btn" alt="Выбрать розовый цвет" type="radio" tabindex="2" checked>
+                            </label>
+                            <label class="form__colors-item">
+                                <input class="form__colors-btn" alt="Выбрать голубой цвет" type="radio" tabindex="3">
+                            </label>
+                            <label class="form__colors-item">
+                                <input class="form__colors-btn" alt="Выбрать зеленый цвет" type="radio" tabindex="4">
+                            </label>
+                        </fieldset>
+                        <p class="form__price">1990₽</p>
+                        <fieldset class="form__cart">
+                            <div class="form__cart-item  quantity  button">
+                                <input type="hidden" name="quantity-choose" value="1" tabindex="5">
+                                <button class="quantity__less">-</button>
+                                <span class="quantity__value">1</span>
+                                <button class="quantity__more">+</button>
+                            </div>
+                            <button class="form__item-add  button">Добавить в корзину</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="popular-item__another  another-items">
+                    Другие товары на loco.com
+                </div>
+            </section>
+
+            <section class="look">
+                <img class="look__img" src="img/total-look.jpg" alt="Фото Serene Total Look">
+                <div>
+                    <h2 class="look__title  title">Serene Total Look</h2>
+                    <h3 class="look__subtitle  subtitle">Осенняя коллекция</h3>
+                    <p class="look__desription  desription">Джинсы, свитер, обувь.<br>
+                    В комплект также входит пакет ароматного чая и кружка.</p>
+                    <form class="look__form  form" action="/" method="post">
+                        <fieldset class="form__cart">
+                            <div class="form__cart-item  quantity  button">
+                                <input type="hidden" name="quantity-choose" value="1" tabindex="6">
+                                <button class="quantity__less">-</button>
+                                <span class="quantity__value">1</span>
+                                <button class="quantity__more">+</button>
+                            </div>
+                            <button class="form__item-add  button">Добавить в корзину</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="look__another  another-items">
+                    Другие товары на loco.com
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrap">
+                <address class="footer__developed">Разработано в 
+                    <img class="footer__logo" src="img/logo-whs.svg" alt="Логотип Web Hero School">
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
