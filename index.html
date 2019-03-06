@@ -4,46 +4,67 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Loco - главная страница</title>
     </head>
     <body>
 
         <header class="header">
-            <a class="header__logo-link" href="#">
-                <img class="header__logo" src="img/logo.jpg" width="98px" height="37px" alt="Логотип LOCO">
-            </a>
-            <a class="header__lang-switcher" href="#" title="Выбрать язык">RU</a>
-            <div class="header__menu"></div>
+            <div class="header__logo-wrap">
+                <a class="header__logo-link" href="#">
+                    <picture class="header__logo">
+                        <source media="(min-width: 768px)" srcset="img/logo.svg">
+                        <img src="img/logo-mob.svg" alt="Логотип LOCO">
+                    </picture>
+                </a>
+                <div class="header__lang-switcher">
+                    <a class="header__lang-link" href="#" title="Выбрать язык">RU</a>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="header__burger">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </div>
+            </div>
         </header>
 
         <main class="main">
 
             <section class="collection">
-                <a class="collection__link" href="#">
-                    <img class="collection__img" src="img/new-collection.jpg" alt="Обложка для новой коллекции">
-                </a>
                 <div class="collection__wrap">
-                    <h1 class="collection__title">Новая коллекция</h1>
-                    <p class="collection__description  desription">Бесплатная доставка включена. Предложение действует на сайте <a class="collection__link" href="#" title="Перейти на наш сайт">loco.com</a> и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-                    <a class="collection__link  button" href="#" title="Читать дальше">Читать дальше</a>
-                    <a class="collection__link  another-items" href="#" title="Посмотреть другие предложения">Другие предложения</a>
+                    <div class="collection__wrap-img">
+                        <picture class="collection__img">
+                            <source media="(min-width: 768px)" srcset="img/new-collection.png">
+                            <img src="img/new-collection-mob.png" alt="Обложка для новой коллекции">
+                        </picture>
+                    </div>
+                    <div class="collection__wrap-text">
+                        <h1 class="collection__title">Новая коллекция</h1>
+                        <p class="collection__description  desription">Бесплатная доставка включена. Предложение действует на сайте <a class="collection__link  collection__link_main" href="#" title="Перейти на наш сайт">loco.com</a> и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+                        <div class="collection__buttons">
+                            <a class="collection__link  button" href="#" title="Читать дальше">Читать дальше</a>
+                            <a class="collection__link  another-items" href="#" title="Посмотреть другие предложения">Другие предложения</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="collection__scroll"></div>
 
                 <div class="collection__social">
                     <ul class="collection__social-list  social">
                         <li class="social__item">
                             <a class="social__link" href="#">
-                                <img class="social__link-instagram" src="img/ig.jpg" width="43" height="43" alt="Мы в Instagram">
+                                <img class="social__link-instagram" src="img/instagram.png" width="43" height="43" alt="Мы в Instagram">
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="#">
-                                <img class="social__link-vkontakte" src="img/vk.jpg" width="43" height="43" alt="Мы ВКонтакте">
+                                <img class="social__link-vkontakte" src="img/VK.png" width="43" height="43" alt="Мы ВКонтакте">
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="#">
-                                <img class="social__link-facebook" src="img/fb.jpg" width="43" height="43" alt="Мы в Facebook">
+                                <img class="social__link-facebook" src="img/FB.png" width="43" height="43" alt="Мы в Facebook">
                             </a>
                         </li>
                     </ul>
@@ -52,8 +73,8 @@
 
             <section class="popular-item">
                 <a class="popular-item__link" href="#" title="Перейти на страницу товара">
-                    <img class="popular-item__img  popular-item__img_small" src="img/white-bag.jpg" alt="Кожаный клатч белый">
-                    <img class="popular-item__img  popular-item__img_big" src="img/pink-bag.jpg" alt="Кожаный клатч розовый">
+                    <img class="popular-item__img  popular-item__img_small" src="img/white-bag.png" alt="Кожаный клатч белый">
+                    <img class="popular-item__img  popular-item__img_big" src="img/pink-bag.png" alt="Кожаный клатч розовый">
                 </a>
                 <div class="popular-item__wrap">
                     <h2 class="popular-item__title  title">Кожаный клатч</h2>
@@ -92,7 +113,7 @@
             </section>
 
             <section class="look">
-                <img class="look__img" src="img/total-look.jpg" alt="Фото Serene Total Look">
+                <img class="look__img" src="img/total-look.png" alt="Фото Serene Total Look">
                 <div>
                     <h2 class="look__title  title">Serene Total Look</h2>
                     <h3 class="look__subtitle  subtitle">Осенняя коллекция</h3>
