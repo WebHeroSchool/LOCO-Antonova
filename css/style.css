@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .header {
         min-height: 92px;
     }
@@ -41,11 +41,11 @@ body {
     height: 37px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .header__logo-wrap {
         display: flex;
         justify-content: space-between;
-        min-width: 32%;
+        min-width: 461px;
 
         background: #000000;
     }
@@ -96,7 +96,7 @@ body {
     width: 70px;
     height: 70px;
 
-    background: #EDEDED;
+    background: #f5f5f3;
     cursor: pointer;
 }
 
@@ -117,7 +117,7 @@ body {
     margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .header__menu {
         width: 92px;
         height: 92px;
@@ -166,15 +166,16 @@ body {
     width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .collection {
-        background: linear-gradient(to right, #000000 32%, #FFFFFF 32%);
+        background: linear-gradient(to right, #000000 461px, #FFFFFF 460px);
     }
 
     .collection__wrap {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 40px;
     }
 }
 
@@ -183,30 +184,26 @@ body {
 
     height: 529px;
     overflow: hidden;
-
-    background-color: #EDEDED;
 }
 
-.collection__img {
-    position: relative;
-    top: -55px;
-
-    display: flex;
-    justify-content: center;
+.collection__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -55px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .collection__wrap-img {
         z-index: 10;
-        width: 549px;
         height: 562px;
         margin-top: 77px;
-
-        background: none;
     }
 
-    .collection__img {
-        position: static;
+    .collection__img img {
+        width: 549px;
+        height: 562px;
+        object-position: 50% 50%;
     }
 }
 
@@ -227,7 +224,7 @@ body {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .collection__wrap-text {
         width: 475px;
         margin-left: 45px;
@@ -307,7 +304,7 @@ body {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .collection__scroll {
         bottom: 39px;
 
